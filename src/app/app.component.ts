@@ -17,7 +17,7 @@ export class AppComponent {
 
   constructor(public giphyService: GiphyService) {}
 
-  search(event: any) {
+  searchGiphy(event: any) {
     event.preventDefault();
     this.giphyService.search(this.query).subscribe((res: any) => {
       this.giphyData = res.data;
