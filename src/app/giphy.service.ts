@@ -9,8 +9,8 @@ import { Subject } from "rxjs";
 export class GiphyService {
   giphyData: any;
 
-  private giphyApiKey = AppSettings.giphyApiKey;
-  private giphyUrl = AppSettings.giphyUrl;
+  private giphyApiKey = AppSettings.giphyApiKEY;
+  private giphyUrl = AppSettings.giphyURL;
 
   constructor(private _http: HttpClient) {}
 
